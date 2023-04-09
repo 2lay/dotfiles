@@ -29,8 +29,8 @@
   --glow-intensity: 0.5; /* Intensity of the glow used around the app. | Set to 0 to disable the glow. | Decimals allowed | Default: 1 */
   --opacity: 0.85; /* Opacity of overall app. | Default: .85 */
   --font: "Inter"; /* Custom font | Default: 'Inter' */
-  --avatar-roundness: 0%; /* Roundness for avatars. | 0% = Square, 50% = Circle | Default: 50% */
-  --server-roundness: 0%; /* Roundness for servers. | 0% = Square, 50% = Circle | Default: 50% */
+  --avatar-roundness: 50%; /* Roundness for avatars. | 0% = Square, 50% = Circle | Default: 50% */
+  --server-roundness: 50%; /* Roundness for servers. | 0% = Square, 50% = Circle | Default: 50% */
   /*
    * RadialStatus veriables
    */
