@@ -37,9 +37,9 @@
   --rs-small-spacing: 0px; /* Spacing between profile image and outer ring on small icons (e.g. member list) | Default: 2px */
   --rs-medium-spacing: 0px; /* Spacing between profile image and outer ring on medium icons (e.g. user popout) | Default: 4px */
   --rs-large-spacing: 0px; /* Spacing between profile image and outer ring on medium icons (e.g. user popout fullscreen) | Default: 4px */
-  --rs-small-width: 1.5px; /* Ring width (follows same sizing as above) | Default: 1.5px */
-  --rs-medium-width: 2px; /* Default: 2px */
-  --rs-large-width: 2px; /* Default: 2px */
+  --rs-small-width: 0px; /* Ring width (follows same sizing as above) | Default: 1.5px */
+  --rs-medium-width: 0px; /* Default: 2px */
+  --rs-large-width: 0px; /* Default: 2px */
   /* Customizable colors */
   --rs-online-color: #43b581; /* Default: #43b581 */
   --rs-idle-color: #faa61a; /* Default: #faa61a */
