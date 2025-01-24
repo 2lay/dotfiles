@@ -14,7 +14,7 @@
     in {
       homeConfigurations.profile = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./home.nix ];
+        modules = [ ./flakes/home.nix ];
       };
     };
 }

@@ -5,7 +5,7 @@ build:
 .PHONY: update
 update:
 	home-manager switch --flake .#profile
-.PHONY: switch
+.PHONY:- switch
 switch:
 	home-manager switch --flake .#profile
 
