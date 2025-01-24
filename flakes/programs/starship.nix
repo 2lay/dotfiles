@@ -1,9 +1,7 @@
-{ config, ... }:
 {
-    programs.bash = {
+    home.packages = [ pkgs.starship ];
+    programs.starship = {
         enable = true;
-        initExtra = ''
-            source ${config.home.hm}/config/bash
-        '';
+        settings = {};
     };
 }
