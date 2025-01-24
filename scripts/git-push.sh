@@ -1,19 +1,31 @@
 #!/usr/bin/env bash
 
-# prompt for commit message
+# Prompt for commit message
 read -p "Enter commit message: " commit_msg
 
-# check if commit message is empty
+# Check if commit message is empty
 if [ -z "$commit_msg" ]; then
     echo "Commit message cannot be empty."
     exit 1
 fi
 
-# stage all changes
+# Stage all changes
 git add .
 
-# commit with the message
+# Check if there are any changes to commit
+if [[ -z $(git status -s) ]]; then
+    echo "No changes to commit."
+    exit 0
+fi
+
+# Commit with the message
 git commit -m "$commit_msg"
 
-# push to main branch
+# Check if the commit is a duplicate of the latest remote commit
+if git diff HEAD origin/main --quiet; then
+    echo "Latest commit already exists. Skipping push."
+    exit 0
+fi
+
+# Push to main branch
 git push origin main
