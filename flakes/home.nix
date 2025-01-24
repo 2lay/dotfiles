@@ -12,5 +12,6 @@
     ./programs/spotify.nix
     ./programs/legcord.nix
     ./programs/prismlauncher.nix
+    ./programs/fastfetch.nix
   ];
 }
