@@ -1,0 +1,30 @@
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ll='ls -la'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Git shortcuts
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git log --oneline'
+
+# System
+alias df='df -h'
+alias free='free -m'
+alias dud='du -d 1 -h'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Safety nets
+alias rm='rm -i'
+alias mkdir='mkdir -p'
+
+# Nix specific
+alias ns='nix-shell'
+alias nb='nix build'
+alias nd='nix develop'
+alias hms='home-manager switch'
