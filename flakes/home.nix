@@ -13,5 +13,6 @@
     ./programs/legcord.nix
     ./programs/prismlauncher.nix
     ./programs/hyfetch.nix
+    ./programs/fastfetch.nix
   ];
 }
